@@ -1,9 +1,8 @@
 // src/pages/Dashboard/Reservations.tsx
 import { useState, useEffect } from "react";
 import { 
-  Calendar, 
-  MapPin, 
-  CreditCard, 
+ 
+  MapPin,  
   Clock, 
   CheckCircle, 
   XCircle, 

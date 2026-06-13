@@ -1,5 +1,5 @@
 // src/data/mockData.ts
-import { User, Hotel, Reservation } from "../types";
+import type { User, Hotel, Reservation } from "../types";
 
 export const mockUsers: User[] = [
   {

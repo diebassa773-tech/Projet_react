@@ -1,4 +1,5 @@
 // src/routes/AppRoutes.tsx
+import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Landing from "../pages/Landing";
@@ -13,7 +14,7 @@ import MyReservations from "../pages/MyReservations";
 // Layout du dashboard
 import DashboardLayout from "../layouts/DashboardLayout";
 // Pages du dashboard
-import DashboardIndex from "../pages/Dashboard/Index";
+import DashboardIndex from "../pages/Dashboard/index";
 import DashboardReservations from "../pages/Dashboard/Reservations";
 import DashboardHotels from "../pages/Dashboard/Hotels";
 import DashboardProfile from "../pages/Dashboard/Profile";
@@ -21,7 +22,7 @@ import DashboardProfile from "../pages/Dashboard/Profile";
 import { authService } from "../services/auth";
 
 // Protection des routes dashboard (admin uniquement)
-const AdminRoute = ({ children }: { children: JSX.Element }) => {
+const AdminRoute = ({ children }: { children: React.ReactNode }) => {
   if (!authService.isAuthenticated()) {
     return <Navigate to="/login" replace />;
   }

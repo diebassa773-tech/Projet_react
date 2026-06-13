@@ -1,7 +1,7 @@
 // src/pages/Dashboard/Profile.tsx
 import { useState, useEffect } from "react";
 import { 
-  User, 
+ 
   Mail, 
   Phone, 
   MapPin, 
@@ -293,7 +293,12 @@ export default function Profile() {
                     type={showNewPassword ? "text" : "password"}
                     required
                     value={passwordData.newPassword}
-                    onChange={(e) => setPasswordData({ ...formData, newPassword: e.target.value })}
+                    onChange={(e) =>
+                    setPasswordData({
+                    ...passwordData,
+                    newPassword: e.target.value,
+                    })
+     }
                     className="w-full pr-10 py-2 border border-gray-200 rounded-lg text-sm focus:ring-1 focus:ring-amber-500"
                   />
                   <button

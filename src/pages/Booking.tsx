@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { 
   Calendar, 
   User, 
-  CreditCard, 
   MapPin, 
   Star, 
   ChevronLeft, 
@@ -60,7 +59,6 @@ export default function Booking() {
   const [chambre, setChambre] = useState("standard");
   const [dateArrivee, setDateArrivee] = useState("");
   const [dateDepart, setDateDepart] = useState("");
-  const [demandesSpeciales, setDemandesSpeciales] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");

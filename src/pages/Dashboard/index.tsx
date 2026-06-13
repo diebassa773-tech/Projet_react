@@ -9,7 +9,6 @@ import {
   ArrowDown,
   RefreshCw,
   ChevronDown,
-  BarChart3,
   PieChart,
   Activity,
   DollarSign,
